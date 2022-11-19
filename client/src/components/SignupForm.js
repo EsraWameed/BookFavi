@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
-
-import { createUser } from '../utils/API';
+//used hook created in mutation.js
+import { useMutation } from "@apollo/react-hooks";
+// import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
+//to add user must import the add user mutaiton
+import { ADD_USER } from "../utils/mutations";
 
 const SignupForm = () => {
   // set initial form state
